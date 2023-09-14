@@ -199,7 +199,8 @@ body {
 
 }
 
-.card__title {
+.card__title,
+.block__title {
 	margin-bottom: 0;
 	margin-bottom: 8px;
 	font-size: 24px;
@@ -379,6 +380,62 @@ body {
 .block__card_gear::after {
 	background: url('../img/icon-gear.svg') no-repeat left center /contain;
 }
+
+/* Stages */
+.stages__title {
+	margin-bottom: 10px;
+}
+
+.stages__wrapper {
+	gap: 160px;
+}
+
+.stages__text {
+	margin-bottom: 21px;
+}
+
+.stages__bottom {
+	display: flex;
+	gap: 32px;
+}
+
+.stages__right {
+	display: flex;
+	height: 100%;
+	padding-top: 31px;
+	min-width: 870px;
+}
+
+.stages__image-bg {
+	flex-grow: 1;
+	min-height: 460px;
+	width: 100%;
+	background: url('../img/stages.jpg') no-repeat center center / cover;
+}
+
+.btn_outline {
+	background: transparent;
+	border: 1px solid var(--black);
+	color: var(--black);
+	transition: color .3s ease-in-out, background .3s ease-in-out;
+}
+
+.btn_outline:hover,
+.btn_outline:focus {
+	background: var(--gray);
+	border: 1px solid var(--gray);
+	color: var(--white);
+}
+
+.btn_outline:active {
+	background: var(--black);
+	border: 1px solid var(--black);
+	color: var(--white);
+}
+
+
+
+
 
 
 
