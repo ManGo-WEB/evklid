@@ -263,6 +263,35 @@ body {
 	outline: none;
 }
 
+/* Hero */
+.section_hero {
+	padding: 100px 80px;
+	background: url('../img/hero-bg.jpg') no-repeat center  center / cover;
+}
+
+.hero__lead {
+	max-width: 837px;
+	margin-bottom: 24px;
+	font-size: 70px;
+	font-weight: 800;
+	line-height: 120%;
+	color: var(--white);
+}
+
+.hero__description {
+	max-width: 790px;
+	margin: 0;
+	margin-bottom: 90px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 120%;
+	color: var(--white);
+}
+
+.btn_hero {
+	padding: 25px 39px;
+}
+
 
 
 
