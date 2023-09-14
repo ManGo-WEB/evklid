@@ -191,17 +191,19 @@ body {
 
 .card {
 	padding: 65px 60px;
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 	border-radius: 32px;
 	border: 1px solid var(--light-gray);
 }
 
 .card__list {
-
+	display: flex;
+	gap: 32px;
 }
 
 .card__title,
 .block__title {
-	margin-bottom: 0;
+	margin: 0;
 	margin-bottom: 8px;
 	font-size: 24px;
 	font-weight: 700;
@@ -348,8 +350,11 @@ body {
 }
 
 .block__card {
+	--gap: 32px;
+	--offsets: 0;
 	position: relative;
-	padding: 40px 110px 65px 300px;
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+	padding: 63px 110px 65px 300px;
 }
 
 .block__card::before {
@@ -383,7 +388,7 @@ body {
 
 /* Stages */
 .stages__title {
-	margin-bottom: 10px;
+	margin-bottom: 36px;
 }
 
 .stages__wrapper {
@@ -402,7 +407,7 @@ body {
 .stages__right {
 	display: flex;
 	height: 100%;
-	padding-top: 31px;
+	padding-top: 7px;
 	min-width: 870px;
 }
 
@@ -431,6 +436,22 @@ body {
 	background: var(--black);
 	border: 1px solid var(--black);
 	color: var(--white);
+}
+
+/* Questions */
+.question__card {
+	--gap: 32px;
+	--offsets: 2;
+}
+
+.question__title {
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.question__description {
+	margin: 0;
+	line-height: 200%;
 }
 
 
